@@ -14,6 +14,7 @@ import Error from './pages/Error/Error';
 import Login from './pages/Login/Login';
 import AuthProvider from './Provider/AuthProvider';
 import Registration from './pages/Registration/Registration';
+import PrivateShowDetail from './PrivateRoute/PrivateShowDetail';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/showDetails/:id",
         loader: () => fetch('services.json'),
-        element: <ShowDetail></ShowDetail>
+        element: <PrivateShowDetail><ShowDetail></ShowDetail></PrivateShowDetail>
       },
       {
         path: "/login",

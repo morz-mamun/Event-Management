@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 import { useContext } from 'react';
@@ -13,6 +13,10 @@ import { AuthContext } from '../../Provider/AuthProvider';
 const Login = () => {
   
   const {googleLogIn, loginUser} = useContext(AuthContext)
+  const navigate = useNavigate()
+
+  const location = useLocation()
+  console.log(location);
 
   const handleGoogleLogIn = () => {
       googleLogIn()
@@ -28,12 +32,13 @@ const Login = () => {
 
     // login user 
     loginUser(email, password)
-    .then(result => {
-      console.log(result.user);
+    .then(() => {
+      navigate(location.state ? location.state : "/")
     })
     .catch(err => {
       console.log(err.message);
     })
+    
   }
     return (
            <div className="hero min-h-screen bg-gradient-to-r from-slate-500 to-blue-200 ...">
