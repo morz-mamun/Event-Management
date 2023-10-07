@@ -13,44 +13,52 @@ const auth = getAuth(app)
 
 const AuthProvider = ({children}) => {
 
+     // onAuthStateChange 
+     const [user, setUser] = useState(null)
+     const [loading, setLoading] = useState(true)
+
+     useEffect(() => {
+         const unSubscribe = onAuthStateChanged(auth, (currentUser) =>{
+            console.log("from onAuthStateChange",currentUser);
+            setUser(currentUser)
+            setLoading(false)
+         })
+         return () => {
+             unSubscribe()
+         }
+     },[])
+
     // google log in
 
     const googleLogIn = () => {
+        setLoading(true)
         return signInWithPopup(auth, provider)
     }
     // create user
     const createUser = (email, password) => {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // logIn user 
 
     const loginUser = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     // logOut user 
 
     const logOutUser = () => {
+        setLoading(true)
         return signOut(auth)
     }
 
 
-    // onAuthStateChange 
-    const [user, setUser] = useState(null)
-
-    useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, (currentUser) =>{
-           console.log("from onAuthStateChange",currentUser);
-           setUser(currentUser)
-        })
-        return () => {
-            unSubscribe()
-        }
-    },[])
+   
 
     // value
-    const authInfo = {googleLogIn, createUser,loginUser , user, logOutUser}
+    const authInfo = {googleLogIn, createUser,loginUser , user, logOutUser, loading}
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

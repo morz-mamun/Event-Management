@@ -5,9 +5,13 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { Navigate, useLocation } from 'react-router-dom';
 
 const PrivateShowDetail = ({children}) => {
-    const {user} = useContext(AuthContext)
+    const {user, loading} = useContext(AuthContext)
     const location = useLocation()
     console.log(location);
+
+    if(loading){
+       return <span className="loading loading-ring loading-lg"></span>
+    }
 
     if(user){
         return children
