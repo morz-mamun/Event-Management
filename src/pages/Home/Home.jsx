@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 import Banner from './Banner';
 import Services from './Services/Services';
+import Footer from '../../shared/Footer/Footer';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
                 <Banner></Banner>
                 <Services></Services>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

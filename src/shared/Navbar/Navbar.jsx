@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const navLinks = <>
@@ -33,7 +33,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-red-600 font-bold text-white">Login</a>
+   <Link to = "/login">
+   <button className="btn bg-red-600 font-bold text-white">Login</button>
+    </Link>
   </div>
 </div>
        </div>
