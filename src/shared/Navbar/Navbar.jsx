@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handleLogOut = () => {
     logOutUser()
-    .then(result => {
+    .then(() => {
       console.log('user logout successfully.');
     })
     .catch(err => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-white text-xl font-bold">Social <span className='text-red-600'>Events</span></a>
+    <a className="btn btn-ghost normal-case text-white text-2xl font-bold">𝓔𝓿𝓮𝓷𝓽 <span className='text-red-600'>𝓔𝓵𝓮𝓰𝓪𝓷𝓬𝓮</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -49,8 +49,8 @@ const Navbar = () => {
   <div className="navbar-end">
 
     {
-      user ? <button onClick={handleLogOut} className="btn bg-red-600 font-bold text-white">LogOut</button> : 
-     <Link to="/login"> <button  className="btn bg-red-600 font-bold text-white">Login</button></Link>
+      user ? <button onClick={handleLogOut} className="btn bg-gradient-to-r from-red-600 to-slate-900 font-bold text-white">LogOut</button> : 
+     <Link to="/login"> <button  className="btn bg-gradient-to-r from-red-600 to-slate-900 font-bold text-white">Login</button></Link>
     }
    
    
