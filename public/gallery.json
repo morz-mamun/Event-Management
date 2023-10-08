@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Wedding Event",
+      "img": "https://i.ibb.co/8DTXhzn/g-wedding.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Birthday Party",
+      "img": "https://i.ibb.co/nwksCms/g-birthday.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Anniversary Program",
+      "img": "https://i.ibb.co/VWD7r28/g-anniversarry.jpg.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Engagement Party",
+      "img": "https://i.ibb.co/8m4nzFc/g-engagement.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Retirement Celebration",
+      "img": "https://i.ibb.co/f0VV4yQ/g-retirement.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower Party",
+      "img": "https://i.ibb.co/8DTXhzn/g-wedding.jpg"
+    }
+  ]
+  
