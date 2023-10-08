@@ -13,7 +13,7 @@ const Gallery = ({ item }) => {
                 <div className="card-actions">
                     <div className="rating gap-1">
                         <input type="radio" name="rating-3" className="mask mask-heart bg-red-600" />
-                        <input type="radio" name="rating-3" className="mask mask-heart bg-red-600" checked />
+                        <input type="radio" name="rating-3" className="mask mask-heart bg-red-600"/>
                         <input type="radio" name="rating-3" className="mask mask-heart bg-red-600" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-black" />
                         <input type="radio" name="rating-3" className="mask mask-heart bg-black" />

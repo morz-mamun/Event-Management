@@ -15,6 +15,8 @@ import Login from './pages/Login/Login';
 import AuthProvider from './Provider/AuthProvider';
 import Registration from './pages/Registration/Registration';
 import PrivateShowDetail from './PrivateRoute/PrivateShowDetail';
+import Blogs from './PrivateRoute/Blogs/Blogs';
+import Venues from './PrivateRoute/Venues/Venues';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>
+      },
+      {
+        path: "/venues",
+        element: <Venues></Venues>
       }
     ]
   },
