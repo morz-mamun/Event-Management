@@ -5,13 +5,13 @@ import { FaLongArrowAltRight } from 'react-icons/fa';
 
 const Service = ({service}) => {
 
-    const {name, image, price, short_description, id} = service
+    const {name, image, price, short_description, id, full_description} = service
     return (
         <div className="card card-compact bg-slate-300 shadow-xl">
             <figure><img src={image} alt="" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
-                <p>Price: {price}</p>
+                <p className='text-red-600 font-bold'>Price: <span className='text-black'>{price}</span> </p>
                 <p>{short_description}</p>
                 <div className="card-actions ">
                    <Link to={`/showDetails/${id}`}> 

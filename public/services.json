@@ -4,7 +4,9 @@
       "name": "Wedding Event",
       "image": "https://i.ibb.co/1drCMtY/wedding.jpg",
       "price": "$10,000",
-      "short_description": "Create lasting memories with our elegant wedding planning services."
+      "short_description": "Create lasting memories with our elegant wedding planning services.",
+      "full_description" : "A beautiful celebration of love and commitment, a wedding is a joyous occasion where two people come together in front of their family and friends to exchange vows and begin their journey as a married couple. It typically includes a ceremony, followed by a reception with food, music, and dancing, creating cherished memories that last a lifetime."
+    
       
     },
     {
@@ -12,7 +14,8 @@
       "name": "Birthday Party",
       "image": "https://i.ibb.co/8g4GjKx/birthday.jpg",
       "price": "$1,500",
-      "short_description": "Celebrate your special day with a joyful birthday party like no other."
+      "short_description": "Celebrate your special day with a joyful birthday party like no other.",
+      "full_description": "A birthday party is a festive gathering to celebrate another year of life. It usually involves cake, presents, and fun activities with friends and family, making it a memorable occasion filled with joy and laughter."
       
     },
     {
@@ -20,7 +23,8 @@
       "name": "Anniversary Program",
       "image": "https://i.ibb.co/8m3zp23/aniverssay.jpg",
       "price": "$5,500",
-      "short_description": "Make your anniversary unforgettable with our expert planning services."
+      "short_description": "Make your anniversary unforgettable with our expert planning services.",
+      "full_description": "An anniversary program is a special event that commemorates a significant milestone in a couple's or organization's history. It typically includes speeches, presentations, entertainment, and sometimes a formal dinner or reception. The focus is on celebrating and reflecting on the accomplishments, love, and enduring commitment that the anniversary represents."
      
     },
     {
@@ -28,7 +32,8 @@
       "name": "Engagement Party",
       "image": "https://i.ibb.co/PQJBCRb/engagement.jpg",
       "price": "$2,000",
-      "short_description": "Kick off your journey to forever with a spectacular engagement party."
+      "short_description": "Kick off your journey to forever with a spectacular engagement party.",
+      "full_description": "An engagement party is a joyful celebration held to announce and celebrate a couple's engagement. It's a festive event where friends and family gather to offer their congratulations and well wishes to the newly engaged couple. Typically, there's food, drinks, music, and often a toast to the couple's upcoming wedding. It's a prelude to the wedding and a time for the couple to share their happiness with loved ones."
       
     },
     {
@@ -36,7 +41,8 @@
       "name": "Retirement Celebration",
       "image": "https://i.ibb.co/Qv7trCz/retirement.jpg",
       "price": "$3,500",
-      "short_description": "Retire in style and celebrate your achievements with a grand party."
+      "short_description": "Retire in style and celebrate your achievements with a grand party.",
+      "full_description": "A retirement celebration is a special event held to honor and commemorate someone's retirement from their career. It's a time for colleagues, friends, and family to gather and celebrate the retiree's achievements and years of hard work. Typically, there are speeches, gifts, and well-wishes, along with food and drinks. It's a joyful occasion to mark the retiree's transition into a new chapter of life."
       
     },
     {
@@ -44,7 +50,8 @@
       "name": "Baby Shower Party",
       "image": "https://i.ibb.co/kBkcgsK/babyshower.jpg",
       "price": "$800",
-      "short_description": "Welcome the new addition with a delightful baby shower event."
+      "short_description": "Welcome the new addition with a delightful baby shower event.",
+      "full_description": "A baby shower is a joyful event to celebrate an expectant mother and the upcoming arrival of her baby. It typically involves close friends and family gathering to offer gifts, share advice, and enjoy food and games. The focus is on supporting and showering the mom-to-be with love and well-wishes as she prepares for motherhood."
       
     }
   ]

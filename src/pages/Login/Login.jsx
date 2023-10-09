@@ -3,21 +3,23 @@ import PropTypes from 'prop-types';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 const Login = () => {
   
   const {googleLogIn, loginUser} = useContext(AuthContext)
+ 
   const navigate = useNavigate()
 
   const location = useLocation()
-  console.log(location);
+  // console.log(location);
 
+  const showToast = (err) => toast(err)
   const handleGoogleLogIn = () => {
       googleLogIn()
   }
@@ -34,16 +36,18 @@ const Login = () => {
     loginUser(email, password)
     .then(() => {
       navigate(location.state ? location.state : "/")
+     
     })
-    .catch(err => {
-      console.log(err.message);
+    .catch((err) => {
+     showToast(err.message)
     })
     
   }
     return (
            <div className="hero min-h-screen bg-gradient-to-r from-slate-500 to-blue-200 ...">
-  
+           
     <div className="hero-content card w-full max-w-3xl shadow-2xl bg-gradient-to-r from-slate-300 to-blue-300 ... ">
+     
       <h1 className='text-3xl font-bold'>LogIn <span className='text-red-600'>Now</span></h1>
       <p className='text-xl'>Do not have account yet? please <Link to='/registration'><span className=' text-red-600 underline font-bold'>Register here.</span></Link></p>
 
@@ -83,6 +87,7 @@ const Login = () => {
         </div>
       </form>
     </div>
+    <ToastContainer></ToastContainer>
   </div>
     );
 };
