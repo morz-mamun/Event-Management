@@ -2,32 +2,30 @@
     {
       "id": 1,
       "venue_name": "Grand Garden Pavilion",
-      "img": "https://example.com/img/venue1.jpg",
+      "img": "https://i.ibb.co/wwhNK1M/garden.jpg",
+      "description": "The Grand Garden Pavilion offers a picturesque setting for your special event. Surrounded by lush greenery, it's an ideal choice for outdoor gatherings and celebrations.",
       "location": "123 Main Street, Cityville"
     },
     {
       "id": 2,
       "venue_name": "Elegant Ballroom Manor",
-      "img": "https://example.com/img/venue2.jpg",
+      "img": "https://i.ibb.co/xqHct15/elegant.jpg",
+      "description": "A luxurious ballroom manor exuding sophistication and grandeur, ideal for elegant receptions and formal gatherings.",
       "location": "456 Elm Avenue, Townsville"
     },
     {
       "id": 3,
       "venue_name": "Lakeview Terrace Hall",
-      "img": "https://example.com/img/venue3.jpg",
+      "img": "https://i.ibb.co/RTTm026/lakeview.jpg",
+      "description": "Lakeview Terrace Hall, located at 789 Oak Lane in Countryside, is a charming and versatile event venue known for its picturesque setting and elegant facilities. Whether you're planning a wedding, corporate gathering, or special celebration, this venue offers a beautiful backdrop with modern amenities to ensure a memorable and seamless event experience.",
       "location": "789 Oak Lane, Countryside"
     },
     {
       "id": 4,
       "venue_name": "Riverside Pavilion",
-      "img": "https://example.com/img/venue4.jpg",
+      "img": "https://i.ibb.co/NZPdYBS/river.jpg",
+      "description": "The Riverside Pavilion, located at 101 River Road in Riverside, is a charming and picturesque event venue nestled by the riverside. It offers a serene and scenic setting for various occasions, making it an ideal choice for weddings, parties, and gatherings. Enjoy the tranquil beauty of the river while celebrating your special moments at this enchanting venue.",
       "location": "101 River Road, Riverside"
-    },
-    {
-      "id": 5,
-      "venue_name": "Mountain View Lodge",
-      "img": "https://example.com/img/venue5.jpg",
-      "location": "234 Summit Street, Hillside"
     }
   ]
   
