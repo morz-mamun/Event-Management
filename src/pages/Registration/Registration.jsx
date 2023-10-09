@@ -58,6 +58,12 @@ const Registration = () => {
           <form onSubmit={handleRegistration} className="card-body w-full">
             <div className="form-control">
               <label className="label">
+                <span className="text-xl font-bold">Name</span>
+              </label>
+              <input type="text" name="name" placeholder="Type your name" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
                 <span className="text-xl font-bold">Email</span>
               </label>
               <input type="email" name="email" placeholder="Type your email" className="input input-bordered" required />

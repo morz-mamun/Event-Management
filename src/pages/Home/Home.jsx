@@ -6,6 +6,7 @@ import Footer from '../../shared/Footer/Footer';
 import AboutUs from './AboutUs';
 import OurGallery from './OurGallery';
 
+
 const Home = () => {
     return (
         <div>

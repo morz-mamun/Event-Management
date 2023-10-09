@@ -5,7 +5,7 @@ const Gallery = ({ item }) => {
 
     const { name, img } = item
     return (
-        <div className="card border-2 space-y-3 pt-3 card-compact bg-slate-300 shadow-xl ">
+        <div className="card border-2 space-y-3 pt-3 card-compact bg-slate-300 shadow-xl px-2 " data-aos="zoom-in-up">
             <h2 className=" text-xl font-bold text-center">{name}</h2>
             <figure><img src={img} /></figure>
             <div className="card-body">
