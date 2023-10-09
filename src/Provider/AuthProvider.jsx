@@ -57,16 +57,16 @@ const AuthProvider = ({children}) => {
 
     // user profile update 
 
-    const userProfileUpdate = () => {
+    const userProfileUpdate = (name, photo) => {
         return updateProfile(auth.currentUser, {
-            displayName: "", photoURL: ""
+            displayName: name, photoURL: photo
         })
     }
 
    
 
     // value
-    const authInfo = {googleLogIn, createUser,loginUser , user, logOutUser, loading}
+    const authInfo = {googleLogIn, createUser,loginUser , user, logOutUser, loading, userProfileUpdate }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

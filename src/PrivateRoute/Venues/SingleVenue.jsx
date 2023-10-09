@@ -7,7 +7,7 @@ const SingleVenue = ({venue}) => {
     const {venue_name, img, location, description} = venue
     return (
         <div className='md:my-10'>
-            <div className="card card-compact bg-base-100 shadow-xl">
+            <div className="card card-compact bg-base-100 shadow-xl" data-aos="zoom-in-up">
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">

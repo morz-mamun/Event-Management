@@ -3,6 +3,7 @@ import blog1 from "../../assets/blogWedding.jpg"
 const Blogs = () => {
     return (
         <div className="max-w-7xl mx-auto my-10">
+            <h1 className='text-5xl font-bold text-center mb-10' data-aos="fade-down" >Our <span className="text-red-600">Blogs</span></h1>
             <div className="px-3 space-y-4">
             <h1 className="font-bold"><span className="text-red-600 font-bold text-xl">Title:</span> A Dreamy Beach Wedding: Sun, Sand, and Love.</h1>
             <div className="flex items-center justify-center max-h-min">

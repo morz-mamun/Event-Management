@@ -5,9 +5,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Registration = () => {
 
-  const { createUser } = useContext(AuthContext)
+  const { createUser, userProfileUpdate } = useContext(AuthContext)
 
   const [error, setError] = useState('')
   const [showPass, setShowPass] = useState(false)
@@ -16,6 +19,8 @@ const Registration = () => {
   const handleRegistration = (e) => {
     e.preventDefault()
     const form = new FormData(e.currentTarget)
+    const name = form.get('name')
+    const photo = form.get('photo')
     const email = form.get('email')
     const password = form.get('password')
     
@@ -33,10 +38,19 @@ const Registration = () => {
       return
     }
 
+    
+
     // create user
     createUser(email, password)
       .then(() => {
-        
+        toast('User Registration Successfully.')
+        userProfileUpdate(name, photo)
+        .then(result => {
+          console.log(result.user);
+        })
+        .catch(err => {
+          toast(err.message)
+        })
       })
       .catch(err => {
         console.log(err.message);
@@ -61,6 +75,12 @@ const Registration = () => {
                 <span className="text-xl font-bold">Name</span>
               </label>
               <input type="text" name="name" placeholder="Type your name" className="input input-bordered" required />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold">Photo URL</span>
+              </label>
+              <input type="text" name="photo" placeholder="Give your photo URL" className="input input-bordered" required />
             </div>
             <div className="form-control">
               <label className="label">
